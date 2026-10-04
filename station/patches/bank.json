@@ -1,0 +1,81 @@
+{
+  "version": "1.0.0-beta",
+  "instrument": "RICH NEON",
+  "patches": [
+    {
+      "id": "rn-20260922-grand",
+      "name": "Italian Grand Presence",
+      "theme": "rot",
+      "parts": [
+        {"on": true, "osc": "piano", "lo": 21, "hi": 108, "trans": 0, "level": 0.92, "pan": 0, "cut": 7200, "res": 0.7, "atk": 0.004, "dec": 1.15, "sus": 0.58, "rel": 1.4}
+      ],
+      "master": {"trim": -3, "ceil": -0.3, "eqL": 0.6, "eqM": 0.3, "eqH": 1.4, "pres": 3.1, "comp": 5.5, "room": 0.16, "dly": 0.04}
+    },
+    {
+      "id": "rn-20260922-stage",
+      "name": "Stage Split Bass/Grand",
+      "theme": "blau",
+      "parts": [
+        {"on": true, "osc": "bass", "lo": 21, "hi": 50, "trans": 0, "level": 0.88, "pan": 0, "cut": 480, "res": 2.4, "atk": 0.008, "dec": 0.28, "sus": 0.82, "rel": 0.22},
+        {"on": true, "osc": "piano", "lo": 51, "hi": 108, "trans": 0, "level": 0.9, "pan": 0, "cut": 6400, "res": 0.8, "atk": 0.004, "dec": 1.0, "sus": 0.6, "rel": 1.2}
+      ],
+      "master": {"trim": -3.5, "ceil": -0.3, "eqL": 1.2, "eqM": 0.2, "eqH": 1.1, "pres": 2.6, "comp": 6.5, "room": 0.12, "dly": 0.03}
+    },
+    {
+      "id": "rn-20260922-tine",
+      "name": "Early Tine EP",
+      "theme": "rot",
+      "parts": [
+        {"on": true, "osc": "ep", "lo": 28, "hi": 96, "trans": 0, "level": 0.86, "pan": 0, "cut": 4300, "res": 1.3, "atk": 0.003, "dec": 0.52, "sus": 0.5, "rel": 0.38}
+      ],
+      "master": {"trim": -2.5, "ceil": -0.3, "eqL": 0.4, "eqM": 0.8, "eqH": 0.6, "pres": 2.4, "comp": 4.5, "room": 0.2, "dly": 0.1}
+    },
+    {
+      "id": "rn-20260922-gospel",
+      "name": "CX Gospel Drawbar",
+      "theme": "blau",
+      "parts": [
+        {"on": true, "osc": "organ", "lo": 36, "hi": 96, "trans": 0, "level": 0.8, "pan": 0, "cut": 9200, "res": 0.2, "atk": 0.003, "dec": 0.06, "sus": 1.0, "rel": 0.07}
+      ],
+      "master": {"trim": -4, "ceil": -0.3, "eqL": 1.5, "eqM": 0.2, "eqH": 0.4, "pres": 1.7, "comp": 3.5, "room": 0.08, "dly": 0.0}
+    },
+    {
+      "id": "rn-20260922-air",
+      "name": "Presence Air Layer",
+      "theme": "blau",
+      "parts": [
+        {"on": true, "osc": "piano", "lo": 48, "hi": 96, "trans": 0, "level": 0.7, "pan": -0.15, "cut": 6000, "res": 0.6, "atk": 0.006, "dec": 0.9, "sus": 0.55, "rel": 1.1},
+        {"on": true, "osc": "pad", "lo": 36, "hi": 96, "trans": 0, "level": 0.45, "pan": 0.2, "cut": 5000, "res": 0.5, "atk": 0.32, "dec": 1.1, "sus": 0.84, "rel": 2.6}
+      ],
+      "master": {"trim": -3, "ceil": -0.3, "eqL": 0.2, "eqM": 0.3, "eqH": 2.0, "pres": 4.0, "comp": 5.0, "room": 0.24, "dly": 0.12}
+    },
+    {
+      "id": "rn-20260922-poly",
+      "name": "1982 Poly Saw",
+      "theme": "rot",
+      "parts": [
+        {"on": true, "osc": "saw", "lo": 36, "hi": 84, "trans": 0, "level": 0.78, "pan": -0.1, "cut": 2600, "res": 6.2, "atk": 0.02, "dec": 0.38, "sus": 0.55, "rel": 0.32},
+        {"on": true, "osc": "saw", "lo": 36, "hi": 84, "trans": 12, "level": 0.28, "pan": 0.12, "cut": 3200, "res": 3.0, "atk": 0.04, "dec": 0.4, "sus": 0.4, "rel": 0.4}
+      ],
+      "master": {"trim": -4, "ceil": -0.3, "eqL": 0.8, "eqM": 0.4, "eqH": 0.8, "pres": 2.1, "comp": 7.0, "room": 0.14, "dly": 0.09}
+    },
+    {
+      "id": "rn-20260922-strings",
+      "name": "Session Strings",
+      "theme": "rot",
+      "parts": [
+        {"on": true, "osc": "strings", "lo": 40, "hi": 88, "trans": 0, "level": 0.82, "pan": 0, "cut": 4500, "res": 1.0, "atk": 0.14, "dec": 0.8, "sus": 0.8, "rel": 1.7}
+      ],
+      "master": {"trim": -3.2, "ceil": -0.3, "eqL": 0.5, "eqM": 0.6, "eqH": 1.8, "pres": 3.3, "comp": 4.8, "room": 0.28, "dly": 0.06}
+    },
+    {
+      "id": "rn-20260922-lead",
+      "name": "Front Presence Lead",
+      "theme": "blau",
+      "parts": [
+        {"on": true, "osc": "lead", "lo": 52, "hi": 96, "trans": 0, "level": 0.8, "pan": 0, "cut": 3500, "res": 5.4, "atk": 0.007, "dec": 0.16, "sus": 0.66, "rel": 0.2}
+      ],
+      "master": {"trim": -3.8, "ceil": -0.3, "eqL": -0.4, "eqM": 0.8, "eqH": 1.6, "pres": 3.9, "comp": 6.2, "room": 0.1, "dly": 0.14}
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>RICH NEON SX</title>
+<link rel="stylesheet" href="station.css?v=1.0.4" />
+</head>
+<body>
+<div class="stage">
+  <div class="chassis" id="chassis" data-theme="rot">
+    <header class="topbar">
+      <div class="brand">
+        <span class="mark" aria-hidden="true"></span>
+        <div>
+          <strong>RICH NEON</strong>
+          <em>BETA FINAL 1.0</em>
+        </div>
+      </div>
+      <div class="assign" id="assign">
+        <button type="button" data-assign="TONE" class="on">TONE</button>
+        <button type="button" data-assign="MIX">MIX</button>
+        <button type="button" data-assign="FX">FX</button>
+        <button type="button" data-assign="DYN">DYN</button>
+      </div>
+      <div class="top-actions">
+        <a class="apk" id="apkLink" href="/RICH-NEON-2026.apk" download="RICH-NEON-2026.apk">APK LADEN</a>
+        <button type="button" data-act="theme" data-theme="rot" class="on" id="btnRot">ROT</button>
+        <button type="button" data-act="theme" data-theme="blau" id="btnBlau">BLAU</button>
+        <button type="button" data-act="bg" id="btnBg">HINTERGRUND</button>
+      </div>
+    </header>
+
+    <div class="desk">
+      <section class="surface" aria-label="Regler">
+        <div class="joyrow">
+          <div>
+            <div class="joy" id="joy" aria-label="Joystick"><i id="joyDot"></i></div>
+            <div class="sws">
+              <button type="button" data-act="hold" id="sw1">SW1<small>HOLD</small></button>
+              <button type="button" data-act="oct" id="sw2">SW2<small>OCT−</small></button>
+            </div>
+          </div>
+          <div class="sideknob">
+            <div class="vol" id="vol" aria-label="Lautstärke"><b id="volCap"></b></div>
+            <span>VOLUME</span>
+            <div class="ribbon" id="ribbon" aria-label="Ribbon"><i id="ribbonCap"></i></div>
+            <span>RIBBON</span>
+          </div>
+        </div>
+        <div class="knobs" id="knobs"></div>
+        <div class="faders" id="faders"></div>
+      </section>
+
+      <section class="view">
+        <div class="bezel">
+          <div class="lcd">
+            <div class="lcd-top">
+              <div>
+                <b id="lcdTitle">COMBI</b>
+                <strong id="patchTitle">Italian Grand Presence</strong>
+              </div>
+              <div class="meters" aria-hidden="true">
+                <i id="mL"></i><i id="mR"></i>
+              </div>
+              <span id="status">Sample-Bank…</span>
+            </div>
+            <canvas id="scope" width="800" height="46"></canvas>
+            <div id="page"></div>
+          </div>
+        </div>
+        <div class="dialbox">
+          <button type="button" data-act="inc" class="nudge">+</button>
+          <div class="dial" id="dial" aria-label="Value Dial"><b></b></div>
+          <button type="button" data-act="dec" class="nudge">−</button>
+          <button type="button" data-act="exit">EXIT</button>
+          <button type="button" data-act="enter">ENTER</button>
+        </div>
+      </section>
+
+      <nav class="modes" aria-label="Modi">
+        <button type="button" data-page="combi" class="on">COMBI</button>
+        <button type="button" data-page="prog">PROG</button>
+        <button type="button" data-page="seq">SEQ</button>
+        <button type="button" data-page="samp">SAMP</button>
+        <button type="button" data-page="global">GLOBAL</button>
+        <button type="button" data-page="media">MEDIA</button>
+        <button type="button" data-page="rack">RACK</button>
+        <button type="button" data-page="set" class="wide">SET LIST</button>
+      </nav>
+    </div>
+
+    <section class="perf">
+      <div class="banks" id="banks"></div>
+      <div class="pads" id="pads"></div>
+      <div class="transport">
+        <div class="tempo">
+          <b id="tempoRead">96</b>
+          <span>BPM</span>
+          <button type="button" data-act="tap" id="btnTap">TAP</button>
+        </div>
+        <button type="button" data-act="rec" id="btnRec" class="rec">REC</button>
+        <button type="button" data-act="stop" id="btnStop">STOP</button>
+        <button type="button" data-act="export" id="btnExport">EXPORT</button>
+        <button type="button" data-act="line" id="btnLine">LINE</button>
+        <div class="rectime" id="recTime">00:00:00</div>
+      </div>
+    </section>
+
+    <div class="keys-wrap" id="keys"></div>
+  </div>
+</div>
+<script src="station.js?v=1.0.4"></script>
+</body>
+</html>
